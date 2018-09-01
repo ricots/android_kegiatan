@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.android.laporan.activity.detail_kegiatan">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/toolbar"
+        />
+
+    <ScrollView android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20px"
+            android:text="gambar laporan"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_dtl"
+            android:src="@drawable/noimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/waktu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <EditText
+        android:enabled="false"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/dtl_kegiatan"
+        android:lines="7"
+        android:hint="kegiatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <EditText
+        android:enabled="false"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/dtl_kendala"
+        android:lines="7"
+        android:hint="kendala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tgl_penanganan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <EditText
+        android:background="@drawable/rounded_edittext"
+        android:hint="solusi"
+        android:id="@+id/dtl_solusi"
+        android:lines="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/waktu_update"
+            android:textSize="16dp"
+            android:textColor="#ed0c0c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/upd_kegiatan"
+        android:text="update data"
+        android:background="@color/PrimaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

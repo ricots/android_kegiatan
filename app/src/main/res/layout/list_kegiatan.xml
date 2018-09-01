@@ -1,0 +1,90 @@
+
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+
+
+    <!--<include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>-->
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="5dp">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/id_kom_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_view"
+            android:layout_toRightOf="@+id/image_view"
+            android:text="prosesor"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="8dp"  />
+
+            <LinearLayout
+                android:gravity="center|clip_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:text="tanggal"
+                    android:id="@+id/tgl_kegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/image_view"
+                    android:layout_toRightOf="@+id/image_view"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:text="hari"
+                    android:id="@+id/hari_kegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/image_view"
+                    android:layout_toRightOf="@+id/image_view"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:text="jam"
+                    android:id="@+id/jam_kegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/image_view"
+                    android:layout_toRightOf="@+id/image_view"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/id_kegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/image_view"
+                    android:layout_toRightOf="@+id/image_view"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
